@@ -14,6 +14,16 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
+## Build and run with Docker
+Previously, we need to install [Docker](https://docs.docker.com) in our PC
+
+Run docker build -t my-angular-app .
+After that, run docker run -p 80:80 my-angular-app
+
+Now, you can open http://localhost in your browser
+
+There we go, we have our app running on docker 
+
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
