@@ -1,0 +1,12 @@
+C:\Users\Armando\Documents\Projects\UruIT\API\DTO\bin\Debug\netstandard2.0\DTO.deps.json
+C:\Users\Armando\Documents\Projects\UruIT\API\DTO\bin\Debug\netstandard2.0\DTO.dll
+C:\Users\Armando\Documents\Projects\UruIT\API\DTO\bin\Debug\netstandard2.0\DTO.pdb
+C:\Users\Armando\Documents\Projects\UruIT\API\DTO\bin\Debug\netstandard2.0\System.ComponentModel.Annotations.dll
+C:\Users\Armando\Documents\Projects\UruIT\API\DTO\bin\Debug\netstandard2.0\System.ComponentModel.Annotations.xml
+C:\Users\Armando\Documents\Projects\UruIT\API\DTO\obj\Debug\netstandard2.0\DTO.csprojAssemblyReference.cache
+C:\Users\Armando\Documents\Projects\UruIT\API\DTO\obj\Debug\netstandard2.0\DTO.csproj.CoreCompileInputs.cache
+C:\Users\Armando\Documents\Projects\UruIT\API\DTO\obj\Debug\netstandard2.0\DTO.AssemblyInfoInputs.cache
+C:\Users\Armando\Documents\Projects\UruIT\API\DTO\obj\Debug\netstandard2.0\DTO.AssemblyInfo.cs
+C:\Users\Armando\Documents\Projects\UruIT\API\DTO\obj\Debug\netstandard2.0\DTO.csproj.CopyComplete
+C:\Users\Armando\Documents\Projects\UruIT\API\DTO\obj\Debug\netstandard2.0\DTO.dll
+C:\Users\Armando\Documents\Projects\UruIT\API\DTO\obj\Debug\netstandard2.0\DTO.pdb

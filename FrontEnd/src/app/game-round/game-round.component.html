@@ -1,0 +1,48 @@
+<div class="Round">
+    <div class="Round-container">
+        <div>
+            <div class="Form">
+                <div class="Form-head">
+                    <h2>Round {{roundNumber}} </h2>
+                    <h2>Play: {{selectedPlayer.name | titlecase}}</h2>
+                </div>
+                <div class="Form-item">
+                    <form [formGroup]="form" (ngSubmit) = "onSubmit(form.value)">
+                        <label for="move">Select Move</label>
+                        <select name="move" id="move" formControlName="move">
+                            <option value="Rock">Rock</option>
+                            <option value="Paper">Paper</option>
+                            <option value="Scissors">Scissors</option>
+                        </select>
+                        <button type="submit" [disabled]="!form.valid">OK</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="Form">
+                <div class="Form-head">
+                    <h2>Score</h2>
+                </div>
+                <div style="overflow-x:auto;">
+                    <table class="tscore">
+                        <thead>
+                            <tr>
+                                <th>Round</th>
+                                <th>Winner</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let item of rounds; let i = index">
+                                <td> {{i + 1}} </td>
+                                <td>{{item.player.name | titlecase}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<ngx-loading [show]="loading" [config]="{ backdropBorderRadius: '3px' }" [template]="customLoadingTemplate"></ngx-loading>
+

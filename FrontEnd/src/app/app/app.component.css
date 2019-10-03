@@ -1,0 +1,42 @@
+
+:host {
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100%;
+  }
+  section {
+    width: 100%;
+    background-color: #f4f8fb;
+    padding: 6em 1em;
+    font-family: 'Roboto', sans-serif;
+    color: #8c93bd;
+  }
+  section > header {
+    padding: 10px;
+    text-align: center;
+  }
+  section > header > h1 {
+    font-size: 2em;
+  }
+  section > header .description {
+    font-style: italic;
+  }
+  .views-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+    grid-row-gap: 1em;
+    overflow: hidden;
+    background: #fff 50%;
+    background-size: cover;
+    border-radius: 5px;
+    box-shadow: 8px 14px 38px rgba(39,44,49,0.06), 1px 3px 8px rgba(39,44,49,0.03);
+    transition: all 0.5s ease;
+    cursor: pointer;
+    justify-items: center;/*center grid*/
+  }
+  
+  .view-item{
+  
+  }
+  

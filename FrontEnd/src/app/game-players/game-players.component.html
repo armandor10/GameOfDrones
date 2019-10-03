@@ -1,0 +1,19 @@
+<div class="Form">
+    <div class="Form-head">
+        <h2>Enter Players' Names</h2>
+    </div>
+    <div class="Form-item">
+        <form [formGroup]="form" (ngSubmit) = "onSubmit(form.value)">
+            <input formControlName="player1" name="player1" type="text" placeholder="Player1' name"/>
+            <div *ngIf="form.get('player1').hasError('pattern')" class="error">
+                    Player1' name has invalid characters
+            </div>
+            <input formControlName="player2" name="player2" type="text" placeholder="Player2' name"/>
+            <div *ngIf="form.get('player2').hasError('pattern')" class="error">
+                    Player2' name has invalid characters
+            </div>
+            <button type="submit" [disabled]="!form.valid">Start</button>
+        </form>
+    </div>
+</div>
+<ngx-loading [show]="loading" [config]="{ backdropBorderRadius: '3px' }" [template]="customLoadingTemplate"></ngx-loading>
