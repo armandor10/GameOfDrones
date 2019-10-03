@@ -1,0 +1,116 @@
+{
+	"info": {
+		"_postman_id": "6635e124-1e57-47b9-9e0d-55907aa4401a",
+		"name": "Games",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Games - Post",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"Players\":[\n\t\t{\n\t\t\t\"name\":\"Diego\"\n\t\t},\n\t\t{\n\t\t\t\"name\":\"Armando\"\n\t\t}\n\t]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:51506/api/game",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "51506",
+					"path": [
+						"api",
+						"game"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Games/id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json; charset=utf-8",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:51506/api/game/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "51506",
+					"path": [
+						"api",
+						"game",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Game - rounds",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:51506/api/game/1/rounds",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "51506",
+					"path": [
+						"api",
+						"game",
+						"1",
+						"rounds"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "round/id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:51506/api/round/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "51506",
+					"path": [
+						"api",
+						"round",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
