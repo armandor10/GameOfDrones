@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Microsoft.EntityFrameworkCore;
 
 namespace BLL
 {
@@ -38,7 +39,7 @@ namespace BLL
             var resp = new Response();
             try
             {
-                var round = _db.Round.FirstOrDefault(g => g.RoundID == id);
+                var round = _db.Round.Include(r => r.Player).FirstOrDefault(g => g.RoundID == id);
                 if (round != null)
                     resp.status = true;
                 resp.data = round;

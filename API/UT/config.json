@@ -1,0 +1,5 @@
+{
+  "ConnectionStrings": {
+    "GameDataContext": "Server=(localdb)\\mssqllocaldb;Database=RPSGame;Trusted_Connection=True;"
+  }
+}
