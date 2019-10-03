@@ -12,6 +12,8 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 ## Build
 
+Before to build, you need to configure the base url (API) on `src/environments/environment.prod.ts` where we'll get the resources eg. `http://localhost:51506/api`
+
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
 ## Build and run with Docker
